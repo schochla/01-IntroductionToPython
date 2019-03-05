@@ -21,10 +21,15 @@
 #
 ###############################################################################
 
-
+import math
 print('Hello, World')
 print('hi there')
 print('one', 'two', 'buckle my shoe')
 
 print(3 + 9)
 print('3 + 9', 'versus', 3 + 9)
+
+print(9 - 7 + 3)
+print((math.cos(math.pi)) / 0)
+type(x = 54)
+
