@@ -28,3 +28,24 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+big_yoshi = rg.SimpleTurtle('turtle')
+big_yoshi.pen = rg.Pen('Green', 3)
+big_yoshi.speed = 30
+size = 200
+for k in range(20):
+    big_yoshi.draw_circle(size)
+    size = size - 10
+
+
+window.tracer(25)
+gamer = rg.SimpleTurtle('turtle')
+gamer.pen = rg.Pen('orange', 1)
+gamer.backward(20)
+for k in range(1000):
+    gamer.right(100)
+    gamer.forward(k)
+
+window.close_on_mouse_click()
+
